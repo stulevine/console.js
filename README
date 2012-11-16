@@ -1,0 +1,17 @@
+A simple, yet powerful debug console written in javascript that opens a pop-up new window when the class is instantiated and the class debug var is set to true.  Allows you to send logging data from your javascript code to the console while developing and testing your code.
+
+Here is an example on how to use this javascript module:
+
+<script type="text/javascript" src="/js/console.js"></script>
+<script type="text/javascript">
+
+var debug;
+
+debug = jsconsole.init('jsconsole');
+debug.width = 300;
+debug.left = 0;
+debug.open();
+browser = navigator.userAgent.toLowerCase();
+debug.log("User Agent Match: "+browser.match("chrome")+", "+browser);
+</script>
+                                                                
